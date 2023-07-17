@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" fillWidth="false" prefHeight="376.0" prefWidth="581.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.educoinsfx.DescricaoAppController">
+   <children>
+      <Label text="Descrição do App">
+         <font>
+            <Font name="Garamond" size="44.0" />
+         </font>
+      </Label>
+      <Label prefHeight="303.0" prefWidth="418.0" text="O aplicativo EduCoins, veio para atacar diretamente a evasão escolar no ensino médio público brasileiro. Contando com a ajuda dos parceiros conveniados, essa solução simples, simula a vida pós acadêmica, onde precisamos trabalhar para sermos recompensados com salários. Aqui o estudante será &quot;pago&quot; com cripto moedas, que chamamos de &quot;EduCoins&quot; (moedas de educação); essas moedas podem ser usadas para compra de diversos itens ao final do ano letivo. Existem diferentes maneiras do estudante adquirir EduCoins, essas podem ser: Ações sociais e comunitárias, Atividades extracurriculares, Trabalho e/ou pesquisa em casa, Frequência em aula, Testes, Provas e muitos outros... Desejamos a todos bom estudo e um ótimo rendimento na poupança! " textAlignment="JUSTIFY" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_Voltar" mnemonicParsing="false" onAction="#irPara" text="Voltar">
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin>
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+    
+   </children>
+</VBox>

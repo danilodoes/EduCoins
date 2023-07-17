@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19" fx:controller="com.mycompany.educoinsfx.LgpdController">
+   <children>
+      <VBox alignment="CENTER" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="100.0">
+         <children>
+            <Label fx:id="lbl_LGPD" maxHeight="900.0" maxWidth="1600.0" text="Visando contemplar e seguir conformidade à lei Geral de Proteção de Dados – LGPD, vale ressaltar que todos os dados pessoais concedidos pelos usuários não serão divulgados, nem tão pouco utilizados para qualquer outra atividade externa ao aplicativo &quot;EduCoins&quot;." textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="Garamond" size="30.0" />
+               </font>
+            </Label>
+            <Button fx:id="btn_OK" mnemonicParsing="false" onAction="#irPara" text="OK">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.educoinsfx.ListarAdminController">
+   <children>
+      <TableView fx:id="tb_admin" layoutX="-1.0" prefHeight="600.0" prefWidth="850.0">
+        <columns>
+          <TableColumn fx:id="PK_Matricula" prefWidth="200.0" text="Matricula" />
+          <TableColumn fx:id="Senha" prefWidth="200.0" text="Senha" />
+            <TableColumn fx:id="CPF" prefWidth="200.0" text="CPF" />
+            <TableColumn fx:id="EMAIL" prefWidth="248.0" text="Email" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

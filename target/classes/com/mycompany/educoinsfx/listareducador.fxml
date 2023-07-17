@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.educoinsfx.ListarEducadorController">
+   <children>
+      <TableView fx:id="tb_educador" layoutX="-1.0" prefWidth="800.0">
+        <columns>
+          <TableColumn fx:id="PK_Matricula" prefWidth="200.0" text="Matricula" />
+          <TableColumn fx:id="Senha" prefWidth="200.0" text="Senha" />
+            <TableColumn fx:id="Setor" prefWidth="200.0" text="Setor" />
+            <TableColumn fx:id="RG" prefWidth="198.0" text="RG" />
+            <TableColumn fx:id="CodTurma" prefWidth="158.0" text="Turma" visible="false" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

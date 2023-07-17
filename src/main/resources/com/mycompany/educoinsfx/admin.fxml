@@ -1,0 +1,740 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="TOP_CENTER" fillWidth="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="578.0" prefWidth="854.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.educoinsfx.AdminController">
+   <children>
+      <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Olá, admin!" textAlignment="CENTER" wrappingWidth="601.13671875">
+         <font>
+            <Font name="Garamond" size="44.0" />
+         </font>
+      </Text>
+      <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Aqui você poderá manter o sistema" textAlignment="CENTER" wrappingWidth="687.13671875">
+         <font>
+            <Font name="Garamond" size="44.0" />
+         </font>
+      </Text>
+      <TabPane prefHeight="422.0" prefWidth="814.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Aluno">
+               <content>
+                  <HBox>
+                     <children>
+                        <VBox alignment="CENTER" fillWidth="false" prefHeight="393.0" prefWidth="428.0">
+                           <children>
+                              <Label prefHeight="17.0" prefWidth="296.0" text="Primeiro: Preencha os campos" textAlignment="CENTER" translateY="-35.0">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </Label>
+                              <TextField fx:id="txt_aluno_matricula" alignment="CENTER" prefWidth="350.0" promptText="Matrícula">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="20.0" />
+                                 </VBox.margin>
+                              </TextField>
+                              <TextField fx:id="txt_aluno_senha" alignment="CENTER" prefWidth="350.0" promptText="Senha">
+                                 <VBox.margin>
+                                    <Insets bottom="20.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </TextField>
+                              <TextField fx:id="txt_aluno_turma" alignment="CENTER" prefWidth="350.0" promptText="Turma">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="20.0" />
+                                 </VBox.margin>
+                              </TextField>
+                              <TextField fx:id="txt_aluno_saldo" alignment="CENTER" prefWidth="350.0" promptText="Saldo - Atenção">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="15.0" />
+                                 </VBox.margin>
+                              </TextField>
+                           </children>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </VBox>
+                        <Separator orientation="VERTICAL" prefHeight="429.0" prefWidth="23.0" />
+                        <VBox alignment="CENTER" fillWidth="false" prefHeight="393.0" prefWidth="428.0">
+                           <children>
+                              <Label prefHeight="30.0" prefWidth="324.0" text="Segundo: Escolha a ação desejada" textAlignment="CENTER" translateY="-52.0">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <HBox prefHeight="40.0" prefWidth="300.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" onAction="#createAluno" prefHeight="40.0" prefWidth="150.0" text="Adicionar" textFill="GREEN">
+                                       <HBox.margin>
+                                          <Insets right="10.0" />
+                                       </HBox.margin>
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Button>
+                                    <Button contentDisplay="CENTER" mnemonicParsing="false" onAction="#deleteAluno" prefHeight="40.0" prefWidth="150.0" text="Remover" textFill="RED">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                       <cursor>
+                                          <Cursor fx:constant="OPEN_HAND" />
+                                       </cursor>
+                                       <effect>
+                                          <InnerShadow />
+                                       </effect>
+                                    </Button>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="20.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="40.0" prefWidth="300.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" onAction="#updateAluno" prefHeight="40.0" prefWidth="150.0" text="Atualizar">
+                                       <HBox.margin>
+                                          <Insets right="10.0" />
+                                       </HBox.margin>
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Button>
+                                    <Button mnemonicParsing="false" onAction="#readAluno" prefHeight="40.0" prefWidth="150.0" text="Listar">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="65.0" />
+                                 </VBox.margin>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </HBox>
+               </content>
+          </Tab>
+            <Tab text="Educador">
+               <content>
+                  <HBox>
+                     <children>
+                        <VBox alignment="CENTER" fillWidth="false" prefHeight="393.0" prefWidth="428.0">
+                           <children>
+                              <Label prefHeight="17.0" prefWidth="296.0" text="Primeiro: Preencha os campos" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="20.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <TextField fx:id="txt_educador_matricula" alignment="CENTER" prefWidth="350.0" promptText="Matrícula">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="20.0" />
+                                 </VBox.margin>
+                              </TextField>
+                              <TextField fx:id="txt_educador_senha" alignment="CENTER" prefWidth="350.0" promptText="Senha">
+                                 <VBox.margin>
+                                    <Insets bottom="20.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </TextField>
+                              <TextField fx:id="txt_educador_setor" alignment="CENTER" prefWidth="350.0" promptText="Setor">
+                                 <VBox.margin>
+                                    <Insets bottom="20.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </TextField>
+                              <TextField fx:id="txt_educador_rg" alignment="CENTER" prefWidth="350.0" promptText="RG">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="20.0" />
+                                 </VBox.margin>
+                              </TextField>
+                              <TextField fx:id="txt_educador_turma" alignment="CENTER" prefWidth="350.0" promptText="Turma" visible="false">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="15.0" />
+                                 </VBox.margin>
+                              </TextField>
+                           </children>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </VBox>
+                        <Separator orientation="VERTICAL" prefHeight="429.0" prefWidth="23.0" />
+                        <VBox alignment="CENTER" fillWidth="false" prefHeight="393.0" prefWidth="428.0">
+                           <children>
+                              <Label prefHeight="30.0" prefWidth="324.0" text="Segundo: Escolha a ação desejada" textAlignment="CENTER" translateY="-52.0">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <HBox prefHeight="40.0" prefWidth="300.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" onAction="#createEducador" prefHeight="40.0" prefWidth="150.0" text="Adicionar" textFill="GREEN">
+                                       <HBox.margin>
+                                          <Insets right="10.0" />
+                                       </HBox.margin>
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Button>
+                                    <Button contentDisplay="CENTER" mnemonicParsing="false" onAction="#deleteEducador" prefHeight="40.0" prefWidth="150.0" text="Remover" textFill="RED">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                       <cursor>
+                                          <Cursor fx:constant="OPEN_HAND" />
+                                       </cursor>
+                                       <effect>
+                                          <InnerShadow />
+                                       </effect>
+                                    </Button>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="20.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="40.0" prefWidth="300.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" onAction="#updateEducador" prefHeight="40.0" prefWidth="150.0" text="Atualizar">
+                                       <HBox.margin>
+                                          <Insets right="10.0" />
+                                       </HBox.margin>
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Button>
+                                    <Button mnemonicParsing="false" onAction="#readEducador" prefHeight="40.0" prefWidth="150.0" text="Listar">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="65.0" />
+                                 </VBox.margin>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </HBox>
+               </content>
+            </Tab>
+            <Tab text="Turma">
+               <content>
+                  <HBox>
+                     <children>
+                        <VBox alignment="CENTER" fillWidth="false" prefHeight="393.0" prefWidth="428.0">
+                           <children>
+                              <Label prefHeight="17.0" prefWidth="296.0" text="Primeiro: Preencha os campos" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="20.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <TextField fx:id="txt_turma_codigo" alignment="CENTER" prefWidth="350.0" promptText="Código da Turma">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="20.0" />
+                                 </VBox.margin>
+                              </TextField>
+                              <TextField fx:id="txt_turma_codigonovo" alignment="CENTER" prefWidth="350.0" promptText="Novo Código">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="168.0" />
+                                 </VBox.margin>
+                              </TextField>
+                           </children>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </VBox>
+                        <Separator orientation="VERTICAL" prefHeight="429.0" prefWidth="23.0" />
+                        <VBox alignment="CENTER" fillWidth="false" prefHeight="393.0" prefWidth="428.0">
+                           <children>
+                              <Label prefHeight="30.0" prefWidth="324.0" text="Segundo: Escolha a ação desejada" textAlignment="CENTER" translateY="-52.0">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <HBox prefHeight="40.0" prefWidth="300.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" onAction="#createTurma" prefHeight="40.0" prefWidth="150.0" text="Adicionar" textFill="GREEN">
+                                       <HBox.margin>
+                                          <Insets right="10.0" />
+                                       </HBox.margin>
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Button>
+                                    <Button contentDisplay="CENTER" mnemonicParsing="false" onAction="#deleteTurma" prefHeight="40.0" prefWidth="150.0" text="Remover" textFill="RED">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                       <cursor>
+                                          <Cursor fx:constant="OPEN_HAND" />
+                                       </cursor>
+                                       <effect>
+                                          <InnerShadow />
+                                       </effect>
+                                    </Button>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="20.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="40.0" prefWidth="300.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" onAction="#updateTurma" prefHeight="40.0" prefWidth="150.0" text="Atualizar">
+                                       <HBox.margin>
+                                          <Insets right="10.0" />
+                                       </HBox.margin>
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Button>
+                                    <Button mnemonicParsing="false" onAction="#readTurma" prefHeight="40.0" prefWidth="150.0" text="Listar">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="65.0" />
+                                 </VBox.margin>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </HBox>
+               </content>
+            </Tab>
+            <Tab text="Parceiro">
+               <content>
+                  <HBox>
+                     <children>
+                        <VBox alignment="CENTER" fillWidth="false" prefWidth="428.0">
+                           <children>
+                              <Label prefHeight="17.0" prefWidth="296.0" text="Primeiro: Preencha os campos" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="30.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <TextField fx:id="txt_parceiro_nome" alignment="CENTER" prefWidth="350.0" promptText="Nome">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="20.0" />
+                                 </VBox.margin>
+                              </TextField>
+                              <TextField fx:id="txt_parceiro_nomenovo" alignment="CENTER" prefWidth="350.0" promptText="Novo nome">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="158.0" />
+                                 </VBox.margin>
+                              </TextField>
+                           </children>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </VBox>
+                        <Separator orientation="VERTICAL" prefHeight="429.0" prefWidth="23.0" />
+                        <VBox alignment="CENTER" fillWidth="false" prefWidth="428.0">
+                           <children>
+                              <Label prefHeight="30.0" prefWidth="324.0" text="Segundo: Escolha a ação desejada" textAlignment="CENTER" translateY="-52.0">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <HBox prefHeight="40.0" prefWidth="300.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" onAction="#createParceiro" prefHeight="40.0" prefWidth="150.0" text="Adicionar" textFill="GREEN">
+                                       <HBox.margin>
+                                          <Insets right="10.0" />
+                                       </HBox.margin>
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Button>
+                                    <Button contentDisplay="CENTER" mnemonicParsing="false" onAction="#deleteParceiro" prefHeight="40.0" prefWidth="150.0" text="Remover" textFill="RED">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                       <cursor>
+                                          <Cursor fx:constant="OPEN_HAND" />
+                                       </cursor>
+                                       <effect>
+                                          <InnerShadow />
+                                       </effect>
+                                    </Button>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="20.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="40.0" prefWidth="300.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" onAction="#updateParceiro" prefHeight="40.0" prefWidth="150.0" text="Atualizar">
+                                       <HBox.margin>
+                                          <Insets right="10.0" />
+                                       </HBox.margin>
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Button>
+                                    <Button mnemonicParsing="false" onAction="#readParceiro" prefHeight="40.0" prefWidth="150.0" text="Listar">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="65.0" />
+                                 </VBox.margin>
+                              </HBox>
+                           </children>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </HBox>
+               </content>
+            </Tab>
+            <Tab text="Recompensas">
+               <content>
+                  <HBox>
+                     <children>
+                        <VBox alignment="CENTER" fillWidth="false" prefHeight="393.0" prefWidth="428.0">
+                           <children>
+                              <Label prefHeight="17.0" prefWidth="296.0" text="Primeiro: Preencha os campos" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="25.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <TextField fx:id="txt_recompensa_nomeparceiro" alignment="CENTER" prefWidth="350.0" promptText="Nome do parceiro">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="20.0" />
+                                 </VBox.margin>
+                              </TextField>
+                              <TextField fx:id="txt_recompensa_item" alignment="CENTER" prefWidth="350.0" promptText="Recompensa">
+                                 <VBox.margin>
+                                    <Insets bottom="20.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </TextField>
+                              <TextField fx:id="txt_recompensa_preco" alignment="CENTER" prefWidth="350.0" promptText="Preço">
+                                 <VBox.margin>
+                                    <Insets bottom="20.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </TextField>
+                              <TextField fx:id="txt_recompensa_itemnovo" alignment="CENTER" prefWidth="350.0" promptText="Nova recompensa">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="20.0" />
+                                 </VBox.margin>
+                              </TextField>
+                              <TextField fx:id="txt_recompensa_preconovo" alignment="CENTER" prefWidth="350.0" promptText="Novo preço">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </TextField>
+                           </children>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </VBox>
+                        <Separator orientation="VERTICAL" prefHeight="429.0" prefWidth="23.0" />
+                        <VBox alignment="CENTER" fillWidth="false" prefHeight="393.0" prefWidth="428.0">
+                           <children>
+                              <Label prefHeight="30.0" prefWidth="324.0" text="Segundo: Escolha a ação desejada" textAlignment="CENTER" translateY="-52.0">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <HBox prefHeight="40.0" prefWidth="300.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" onAction="#createRecompensa" prefHeight="40.0" prefWidth="150.0" text="Adicionar" textFill="GREEN">
+                                       <HBox.margin>
+                                          <Insets right="10.0" />
+                                       </HBox.margin>
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Button>
+                                    <Button contentDisplay="CENTER" mnemonicParsing="false" onAction="#deleteRecompensa" prefHeight="40.0" prefWidth="150.0" text="Remover" textFill="RED">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                       <cursor>
+                                          <Cursor fx:constant="OPEN_HAND" />
+                                       </cursor>
+                                       <effect>
+                                          <InnerShadow />
+                                       </effect>
+                                    </Button>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="20.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="40.0" prefWidth="300.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" onAction="#updateRecompensa" prefHeight="40.0" prefWidth="150.0" text="Atualizar">
+                                       <HBox.margin>
+                                          <Insets right="10.0" />
+                                       </HBox.margin>
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Button>
+                                    <Button mnemonicParsing="false" onAction="#readRecompensa" prefHeight="40.0" prefWidth="150.0" text="Listar">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="65.0" />
+                                 </VBox.margin>
+                              </HBox>
+                           </children>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </HBox>
+               </content>
+            </Tab>
+            <Tab text="Administrador">
+               <content>
+                  <HBox>
+                     <children>
+                        <VBox alignment="CENTER" fillWidth="false" prefHeight="393.0" prefWidth="428.0">
+                           <children>
+                              <Label prefHeight="17.0" prefWidth="296.0" text="Primeiro: Preencha os campos" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="50.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <TextField fx:id="txt_admin_matricula" alignment="CENTER" prefWidth="350.0" promptText="Matrícula">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="20.0" />
+                                 </VBox.margin>
+                              </TextField>
+                              <TextField fx:id="txt_admin_senha" alignment="CENTER" prefWidth="350.0" promptText="Senha">
+                                 <VBox.margin>
+                                    <Insets bottom="20.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </TextField>
+                              <TextField fx:id="txt_admin_cpf" alignment="CENTER" prefWidth="350.0" promptText="CPF">
+                                 <VBox.margin>
+                                    <Insets bottom="20.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </TextField>
+                              <TextField fx:id="txt_admin_email" alignment="CENTER" prefWidth="350.0" promptText="E-mail">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="35.0" />
+                                 </VBox.margin>
+                              </TextField>
+                           </children>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </VBox>
+                        <Separator orientation="VERTICAL" prefHeight="429.0" prefWidth="23.0" />
+                        <VBox alignment="CENTER" fillWidth="false" prefHeight="393.0" prefWidth="428.0">
+                           <children>
+                              <Label prefHeight="30.0" prefWidth="324.0" text="Segundo: Escolha a ação desejada" textAlignment="CENTER" translateY="-52.0">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <HBox prefHeight="40.0" prefWidth="300.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" onAction="#createAdmin" prefHeight="40.0" prefWidth="150.0" text="Adicionar" textFill="GREEN">
+                                       <HBox.margin>
+                                          <Insets right="10.0" />
+                                       </HBox.margin>
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Button>
+                                    <Button contentDisplay="CENTER" mnemonicParsing="false" onAction="#deleteAdmin" prefHeight="40.0" prefWidth="150.0" text="Remover" textFill="RED">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                       <cursor>
+                                          <Cursor fx:constant="OPEN_HAND" />
+                                       </cursor>
+                                       <effect>
+                                          <InnerShadow />
+                                       </effect>
+                                    </Button>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="20.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="40.0" prefWidth="300.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" onAction="#updateAdmin" prefHeight="40.0" prefWidth="150.0" text="Atualizar">
+                                       <HBox.margin>
+                                          <Insets right="10.0" />
+                                       </HBox.margin>
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Button>
+                                    <Button mnemonicParsing="false" onAction="#readAdmin" prefHeight="40.0" prefWidth="150.0" text="Listar">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </Button>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="65.0" />
+                                 </VBox.margin>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </HBox>
+               </content>
+            </Tab>
+            <Tab text="↴">
+               <content>
+                  <Button mnemonicParsing="false" onAction="#irPara" prefHeight="25.0" prefWidth="838.0" text="SAIR" />
+               </content>
+            </Tab>
+        </tabs>
+         <VBox.margin>
+            <Insets top="20.0" />
+         </VBox.margin>
+      </TabPane>
+   </children>
+   <padding>
+      <Insets top="20.0" />
+   </padding>
+</VBox>

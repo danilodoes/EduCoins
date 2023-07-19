@@ -37,7 +37,7 @@ Essas moedas podem ser usadas para compra de diversos itens doados pelos parceir
 
 #### Processo de desenvolvimento
   <a href ="https://padlet.com/danilosantos6362/a3-modelagem-de-software-jx9l7rj1ci9qe92k">Bastidores</a>
-#### Projeto Destaque:
+#### Projeto Destaque
 <a href="https://drive.google.com/file/d/19SR5ZxnNTX8AS1LwoOUvISbCx_axoy0K/view?usp=sharing" target="_blank">Confira</a>
 
 ## Fluxo da Aplicação

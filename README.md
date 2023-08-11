@@ -42,10 +42,10 @@ Essas moedas podem ser usadas para compra de diversos itens doados pelos parceir
 
 ## Fluxo da Aplicação
 Aqui você poderá entender o fluxo da aplicação através de suas telas, caso logado como: </br>
-<a href="https://drive.google.com/drive/u/0/folders/14xSR6ACtYCNg9SuMNJjCfFnREcvXMm_g" targe="_blank">Aluno</a></br>
-<a href="https://drive.google.com/drive/u/0/folders/1qdhpbTFf-KQWw3q9oK0-olK363v2VKsQ" targe="_blank">Educador</a></br>
-<a href="https://drive.google.com/drive/u/0/folders/1-EOxoyiyROfj6WUw1_PT8YCUlaI_wGUX" targe="_blank">Administrador</a></br>
-<a href="https://drive.google.com/file/d/136XHeo1_XzRzZT_CZzZX0bTKBCFHyx4o/view?usp=sharing" targe="_blank">Comum a todos os usuários</a>.
+<a href="https://drive.google.com/drive/u/0/folders/14xSR6ACtYCNg9SuMNJjCfFnREcvXMm_g" target="_blank">Aluno</a></br>
+<a href="https://drive.google.com/drive/u/0/folders/1qdhpbTFf-KQWw3q9oK0-olK363v2VKsQ" target="_blank">Educador</a></br>
+<a href="https://drive.google.com/drive/u/0/folders/1-EOxoyiyROfj6WUw1_PT8YCUlaI_wGUX" target="_blank">Administrador</a></br>
+<a href="https://drive.google.com/file/d/136XHeo1_XzRzZT_CZzZX0bTKBCFHyx4o/view?usp=sharing" target="_blank">Comum a todos os usuários</a>.
 
 
 ## Desenvolvido por
